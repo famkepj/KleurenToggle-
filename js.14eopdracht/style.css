@@ -1,0 +1,66 @@
+
+.red,
+.makeRed{
+    background-color: red; 
+}
+
+.orange,
+.makeOrange{ 
+    background-color: orange;
+}
+
+.yellow,
+.makeYellow{
+    background-color: yellow;
+}
+  
+.green,
+.makeGreen{
+    background-color: green;
+}
+
+.blue,
+.makeBlue{
+    background-color: blue;
+}
+
+.purple,
+.makePurple{
+    background-color: purple;
+}
+   
+nav{
+    width: 50%;
+}
+
+li {
+    display: block;
+    border: 3px solid grey;
+    width: 600px; max-width: 96%;
+}
+
+body{
+    font-size: 4em;
+}
+
+img{
+    width: 400px; max-width: 96%;
+    margin: 50px;
+}
+
+.menu{
+    margin: 0;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: menu_off;
+}
+
+@keyframes menu_on{
+    from{transform: translateX(-1000px)}
+    to{transform: translateX(50px)} 
+}
+
+@keyframes menu_off{
+    from{transform: translateX(50px)}
+    to{transform: translateX(-1000px)}
+}
